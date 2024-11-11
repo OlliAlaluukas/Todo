@@ -133,7 +133,7 @@ describe('POST register', () => {
 
 describe('POST login', () => {
     const email = 'login@foo.com'
-    const password = 'login123'
+    const password = 'register123'
     insertTestUser(email,password)
     it('should login with valid credentials',async() => {
         const response = await fetch('http://localhost:3001/' + 'user/login',{
